@@ -9,12 +9,12 @@ public class AppTest {
         if (args.has("name"))
             name = args.getAsJsonPrimitive("name").getAsString();
         if (args.has("place")) {
-			place = args.getAsJsonPrimitive("place").getAsString();
-		}
+	place = args.getAsJsonPrimitive("place").getAsString();
+	}
 
         JsonObject response = new JsonObject();
         response.addProperty("payload", "Hello, " + name + "in" + place + "!");
-        response.addProperty("payload", "Hello, " + name + "in" + place + "!");
+        response.addProperty("payload", "Hi, " + name + "in" + place + "!");
         return response;
     }
 }
